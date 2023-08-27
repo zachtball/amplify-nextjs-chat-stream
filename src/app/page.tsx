@@ -4,7 +4,7 @@ import { useChat } from 'ai/react';
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat({
-    api: process.env.LAMBDA_CHAT_URL,
+    api: process.env.NEXT_PUBLIC_LAMBDA_CHAT_URL,
   });
 
   return (
